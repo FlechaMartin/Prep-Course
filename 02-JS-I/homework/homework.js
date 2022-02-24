@@ -36,43 +36,71 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-    var sum = x + y;
-    return sum;
+    let suma;
+    x=parseInt(prompt('Ingrese un valor para sumar: '));
+    y=parseInt(prompt('Ingrese otro valor para sumar: '))
+    sumar = x + y;
+    document.write(x + ' + ' + y + ' = ' + suma);
+    document.write('<br>');
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-    var rest= x - y;
-    return rest;  
+    let restar;
+    x=parseInt(prompt('Ingrese un valor para restar: '))  
+    y=parseInt(prompt('Ingrese otro valor para realizar la resta: '));
+    restar = x - y;
+    document.write(x + ' - ' + y + ' = ' + restar);
+    document.write('<br>');
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-    var mul = x * y;
-    return mul;  
+    let multi;
+    x=parseInt(prompt('Ingrese un valor para multiplicar: '));
+    y=parseInt(prompt('Ingrese otro valor: '));
+    multi = x * y;
+    document.write(x + ' * ' + y + ' = ' + multi);
+    document.write('<br>');
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-    var division = x / y;
-    return division;
+    let division;
+    x=parseInt(prompt('Ingrese un valor para realizar una división: '));
+    y=parseInt(prompt('Ingrese otro valor para didivir: '));
+    division = x / y;
+    document.write(x + ' / ' + y + ' = ' + division);
+    document.write('<br>');
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    var igual= x == y;
-    return igual;
+    x=parseInt(prompt('Ingrese un valor para saber si son iguales: '));
+    y=parseInt(prompt('Ingrese otro valor: '));
+    if (x == y) {
+      document.write(true);
+    }else {
+      document.write(false);
+    }document.write('<br>');
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  str1=prompt('Ingrese una palabra: ');
+  str2=prompt('Ingrese otra palabra: ');
+  if (str1.length == str2.length) {
+    document.write(true);
+  }else {
+    document.write(false);
+  }document.write('<br>');
   
 }
 
@@ -80,33 +108,59 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  num=parseInt(prompt('Ingrese un valor: '))
+  if (num < 90) {
+    document.write(true);
+  }else {
+    document.write(false);
+  }document.write('<br>');
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  num=parseInt(promp('Ingrese un valor para saber si es mayor a 50: '));
+  if (num > 50) {
+    document.write(true);
+  }else {
+    document.write(false);
+  }document.write('<br>');
   
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  x=parseInt(prompt('Ingrese un valor para conocer el resto de la division: '));
+  y=parseInt(prompt('Ingrese otro valor: '));
+  let resto = x % y;
+  document.write('EL resto de la divison es ',resto);
+  document.write('<br>');
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  num=parseInt(prompt('Ingrese un valor para saber si es par: '));
+  if (num % 2 == 0){
+    document.write(true);
+  }else {
+    document.write(false);
+  }document.write('<br>');
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  num=parseInt(prompt('Ingrese un valor para saber si es impar: '));
+  if (num % 2 != 0) {
+    document.write(true);
+  }else {
+    document.write(false);
+  }document.write('<br>');
   
 }
 
